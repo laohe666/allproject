@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.laohe</groupId>
+  <artifactId>allproject</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>sql</module>
+    <module>swing</module>
+    <module>javafx</module>
+  </modules>
+
+  <name>allproject</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <junit.version>4.11</junit.version>
+    <springboot.dependencies.version>2.1.5.RELEASE</springboot.dependencies.version>
+    <mysql.version>5.1.47</mysql.version>
+    <druid.version>1.1.10</druid.version>
+    <lombok.version>1.18.12</lombok.version>
+    <mybatis.version>2.1.3</mybatis.version>
+    <fastjson.version>1.2.75</fastjson.version>
+    <springboot.web.version>2.3.5.RELEASE</springboot.web.version>
+    <springboot.actuator>2.3.4.RELEASE</springboot.actuator>
+  </properties>
+    <!--依赖管理-->
+    <dependencyManagement>
+      <dependencies>
+          <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+          </dependency>
+        <!--springBoot依赖-->
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-dependencies</artifactId>
+              <version>${springboot.dependencies.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+          </dependency>
+
+        <!-- Mysql依赖 -->
+        <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>${mysql.version}</version>
+        </dependency>
+
+        <!-- Druid依赖 -->
+        <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+          <version>${druid.version}</version>
+        </dependency>
+
+        <!-- LomBok -->
+        <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>${lombok.version}</version>
+          <scope>provided</scope>
+        </dependency>
+
+        <!-- Mybaties -->
+        <dependency>
+          <groupId>org.mybatis.spring.boot</groupId>
+          <artifactId>mybatis-spring-boot-starter</artifactId>
+          <version>${mybatis.version}</version>
+        </dependency>
+
+        <!-- FastJson -->
+        <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>fastjson</artifactId>
+          <version>${fastjson.version}</version>
+        </dependency>
+
+        <!-- SpringBoot web -->
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-web</artifactId>
+          <version>${springboot.web.version}</version>
+        </dependency>
+
+        <!-- actuator视图 -->
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+          <version>${springboot.actuator}</version>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
+</project>

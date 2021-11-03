@@ -1,0 +1,3 @@
+# Project exclude paths
+/javafx/target/
+/sql/target/
