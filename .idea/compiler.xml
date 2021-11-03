@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sql" />
-        <module name="swing" />
         <module name="javafx" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="swing" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
