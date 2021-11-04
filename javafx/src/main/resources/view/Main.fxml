@@ -6,13 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laohe.controller.MainController">
    <children>
-      <Button layoutX="273.0" layoutY="273.0" mnemonicParsing="false" text="开始爆破" />
-      <CheckBox layoutX="72.0" layoutY="109.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="72.0" layoutY="147.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="72.0" layoutY="192.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="72.0" layoutY="231.0" mnemonicParsing="false" text="CheckBox" />
+      <Button fx:id="startBtn" layoutX="273.0" layoutY="273.0" mnemonicParsing="false" onAction="#downToUp" text="开始爆破" />
+      <TextField fx:id="textOne" layoutX="220.0" layoutY="110.0" />
+      <TextField fx:id="textTwo" layoutX="220.0" layoutY="171.0" />
+      <ListView fixedCellSize="100.0" layoutX="20.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

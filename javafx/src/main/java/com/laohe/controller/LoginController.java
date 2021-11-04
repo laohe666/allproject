@@ -1,14 +1,21 @@
 package com.laohe.controller;
 
-import com.laohe.alter.ViewAlter;
+
 import de.felixroske.jfxsupport.FXMLController;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -20,7 +27,8 @@ import java.util.ResourceBundle;
  */
 @FXMLController
 public class LoginController implements Initializable {
-    private ViewAlter viewAlter = ViewAlter.getViewAlter();
+    @FXML
+    AnchorPane pane1;
 
     /**
      * 登陆按钮
@@ -54,13 +62,21 @@ public class LoginController implements Initializable {
     public void login() throws IOException {
         String username = usernameText.getText();
         String password = passwordText.getText();
-        viewAlter.gotoMainView();
+        for (int i = 0; i < 10000; i++ ) {
+            usernameText.setText(String.valueOf(i));
+        }
+//        FXMLLoader loader = new FXMLLoader();
+//        InputStream in = LoginController.class.getResourceAsStream("/view/Main.fxml");
+//        loader.setBuilderFactory(new JavaFXBuilderFactory());
+//        loader.setLocation(LoginController.class.getResource("/view/Main.fxml"));
+//        AnchorPane pane = loader.load(in);
+//        Scene scene = new Scene(pane);
+//        Stage stage = new Stage();
+//        stage.setScene(scene);
+//        stage.sizeToScene();
+//        stage.setTitle("爆破字典");
+//        in.close();
+//        stage.show();
     }
 
-    /**
-     *
-     * */
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
 }

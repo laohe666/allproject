@@ -1,8 +1,12 @@
 package com.laohe.controller;
 
-import com.laohe.alter.ViewAlter;
+
 import de.felixroske.jfxsupport.FXMLController;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,17 +20,30 @@ import java.util.ResourceBundle;
 @FXMLController
 public class MainController implements Initializable {
 
-    private ViewAlter viewAlter;
+    /**
+     * 开始爆破按钮
+     * */
+    @FXML
+    private Button startBtn;
 
     /**
-     *
+     * 上面的输入框
      * */
-    public void setApp(ViewAlter viewAlter) {
-        this.viewAlter = viewAlter;
-    }
+    @FXML
+    private TextField textOne;
+
+    @FXML
+    private TextField textTwo;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+    }
+
+    /**
+     * 将下面的内容放入上面
+     * */
+    public void downToUp() {
+        textOne.setText(textTwo.getText());
     }
 }
