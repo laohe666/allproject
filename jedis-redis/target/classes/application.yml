@@ -6,9 +6,9 @@ spring:
     host: 140.246.102.224
     port: 6379
     password:
-    jedis:
+    lettuce:
       pool:
         max-active: 8
         max-wait: -1
-        max-idle: 500
+        max-idle: 8
         min-idle: 0
