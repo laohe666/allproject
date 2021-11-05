@@ -115,13 +115,21 @@
           <version>2.4.3</version>
           <scope>test</scope>
         </dependency>
-          JHFE
+
         <!--commons-pool2 解决redis报错-->
         <dependency>
           <groupId>org.apache.commons</groupId>
           <artifactId>commons-pool2</artifactId>
           <version>2.0</version>
         </dependency>
+
+        <!-- spring druid依赖 可开启druid监控 -->
+        <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid-spring-boot-starter</artifactId>
+          <version>1.2.6</version>
+        </dependency>
+
       </dependencies>
 
     </dependencyManagement>
