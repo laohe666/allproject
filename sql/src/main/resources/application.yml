@@ -8,6 +8,25 @@ spring:
     username: xm
     password: 123456
     url: jdbc:mysql://140.246.102.224:3306/xm
+    druid:
+      # 初始化时建立物理连接的个数
+      initial-size: 10
+      # 最大活跃连接数
+      max-active: 30
+      # 最小连接池连接数
+      min-idle: 0
+      # 等待时间
+      max-wait: 5000
+      # 是否缓存,如果数据库能使用游标就可以开启
+      pool-prepared-statements: false
+      #
 mybatis:
-  type-aliases-package: com.laohe.dal.entity.
+  #开启别名
+  type-aliases-package: com.laohe.dal.entity
+  #mapper
   mapper-locations: classpath:mapper/*.xml
+
+#开启sql日志输出
+logging:
+  level:
+    com.laohe.dal.mapper: debug

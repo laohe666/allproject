@@ -12,6 +12,7 @@
     <module>sql</module>
     <module>javafx</module>
     <module>jedis-redis</module>
+      <module>thread</module>
   </modules>
 
   <name>allproject</name>

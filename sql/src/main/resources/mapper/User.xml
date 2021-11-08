@@ -4,6 +4,6 @@
 
 
     <select id="selectAllUser" resultType="User">
-
+        select * from user
     </select>
 </mapper>
