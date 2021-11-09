@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
+import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -23,15 +25,15 @@ public class AppTest
     @Autowired
     private UserMapper mapper;
 
+    @Resource
+    private DataSource dataSource;
+
     /**
      * Rigorous Test :-)
      */
     @Test
     public void shouldAnswerWithTrue()
     {
-        List<User> users = mapper.selectAllUser();
-        for (User user : users) {
-            System.out.println(user);
-        }
+        System.out.println(dataSource.getClass());
     }
 }

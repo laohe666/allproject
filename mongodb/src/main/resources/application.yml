@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:123456@140.246.102.224:27017/test
+  application:
+    name: mgdb
