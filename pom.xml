@@ -14,6 +14,8 @@
     <module>jedis-redis</module>
       <module>thread</module>
       <module>mongodb</module>
+    <module>service-loader</module>
+      <module>mybatisx</module>
   </modules>
 
   <name>allproject</name>
@@ -137,6 +139,13 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-data-mongodb</artifactId>
           <version>2.4.12</version>
+        </dependency>
+
+        <!-- MybatisX-->
+        <dependency>
+          <groupId>com.baomidou</groupId>
+          <artifactId>mybatis-plus-boot-starter</artifactId>
+          <version>3.3.2</version>
         </dependency>
 
 
