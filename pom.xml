@@ -16,6 +16,7 @@
       <module>mongodb</module>
     <module>service-loader</module>
       <module>mybatisx</module>
+      <module>spring-aop</module>
   </modules>
 
   <name>allproject</name>
@@ -146,6 +147,13 @@
           <groupId>com.baomidou</groupId>
           <artifactId>mybatis-plus-boot-starter</artifactId>
           <version>3.3.2</version>
+        </dependency>
+
+        <!-- SpringBootAop-->
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-aop</artifactId>
+          <version>2.2.3.RELEASE</version>
         </dependency>
 
 
