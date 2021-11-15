@@ -3,6 +3,7 @@ package com.laohe;
 import static org.junit.Assert.assertTrue;
 
 import com.laohe.entity.User;
+import com.laohe.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,8 @@ public class AppTest
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
 
-
+    @Autowired
+    private UserService userService;
     @Test
     public void set(){
         User user = new User();
@@ -31,7 +33,7 @@ public class AppTest
         user.setPassword("李四1");
         redisTemplate.opsForValue().set("myKey",user);
         User user1 = (User) redisTemplate.opsForValue().get("myKey");
-    System.out.println(redisTemplate.opsForValue().get("myKey"));
+        System.out.println(redisTemplate.opsForValue().get("myKey"));
         System.out.println(user1);
 //        Map<String,String> map = new HashMap<>();
 //        map.put("张三","1");
@@ -58,6 +60,13 @@ public class AppTest
 //        }
         LettuceConnectionFactory factory = null;
         System.out.println();
+    }
+
+    @Test
+    public void getUser() {
+        User user = userService.getUser("张三");
+        System.out.println(user);
+        System.out.println(userService.getUUUU("张三1"));
     }
 
 }
