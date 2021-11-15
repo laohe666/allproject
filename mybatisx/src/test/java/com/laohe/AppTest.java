@@ -2,7 +2,12 @@ package com.laohe;
 
 import static org.junit.Assert.assertTrue;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.laohe.entity.People;
 import com.laohe.entity.User;
+import com.laohe.mapper.PeopleMapper;
+import com.laohe.mapper.UserMapper;
+import com.laohe.service.impl.PeopleServiceImpl;
 import com.laohe.service.impl.UserServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +28,12 @@ public class AppTest
     @Autowired
     private UserServiceImpl userService;
 
+    @Autowired
+    private PeopleServiceImpl peopleService;
+
+    @Autowired
+    private PeopleMapper peopleMapper;
+
     /**
      * 测试新增用户
      * */
@@ -41,5 +52,18 @@ public class AppTest
     public void findUsers() {
         List<User> users = userService.findUsers();
         users.stream().forEach(user -> System.out.println(user));
+    }
+
+
+    /**
+     * 测试新增 People
+     * */
+    @Test
+    public void addPeople() {
+        People people = new People();
+        people.setUsername("张三8");
+        people.setPassword("123456");
+
+        peopleMapper.insert(people);
     }
 }

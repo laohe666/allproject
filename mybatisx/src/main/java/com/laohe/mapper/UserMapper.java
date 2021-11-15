@@ -1,5 +1,6 @@
 package com.laohe.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.laohe.entity.User;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +11,7 @@ import java.util.List;
  * @Date: 2021/11/12 15:18
  */
 @Repository
-public interface UserMapper {
+public interface UserMapper extends BaseMapper<User> {
 
     /**
      * 插入用户
