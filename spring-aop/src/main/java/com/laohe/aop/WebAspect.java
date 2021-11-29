@@ -17,13 +17,13 @@ public class WebAspect {
     /**
      * 切入点
      * */
-    @Pointcut("execution("")")
+//    @Pointcut("execution("")")
     public void pointCut() {}
 
     /**
      * 前置通知 , 目标方法调用前被调用
      * */
-    @Before("pointCut()")
+//    @Before("pointCut()")
     public void beforeAdvice(JoinPoint joinPoint) {
         System.out.println("<-----前置通知----->");
         Signature signature = joinPoint.getSignature();

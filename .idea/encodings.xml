@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/http-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javafx/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javafx/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jedis-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jedis-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongodb/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongodb/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-aop/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webservice/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

@@ -32,6 +32,7 @@ public class AppTest
         entity.setDescription("张三的描述");
         entity.setUrl("www.baidu.com");
         demoService.saveDemo(entity);
+        System.out.println(demoService.findDemoById(2L));
     }
 
     @Test
