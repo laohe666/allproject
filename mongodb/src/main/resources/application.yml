@@ -1,6 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://root:123456@140.246.102.224:27017/mong
+      uri: mongodb://laohe:123456@140.246.102.224:27017/mong
   application:
     name: mgdb

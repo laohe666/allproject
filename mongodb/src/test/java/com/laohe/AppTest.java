@@ -26,8 +26,8 @@ public class AppTest
     public void shouldAnswerWithTrue()
     {
         DemoEntity entity = new DemoEntity();
-        entity.setId(2L);
-        entity.setTitle("标题");
+        entity.setId(4L);
+//        entity.setTitle("标题");
         entity.setBy("张三");
         entity.setDescription("张三的描述");
         entity.setUrl("www.baidu.com");

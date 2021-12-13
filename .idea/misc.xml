@@ -12,6 +12,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/jpa/pom.xml" />
         <option value="$PROJECT_DIR$/service-loader/pom.xml" />
         <option value="$PROJECT_DIR$/swing/pom.xml" />
       </set>

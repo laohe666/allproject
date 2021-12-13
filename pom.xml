@@ -18,6 +18,10 @@
       <module>spring-aop</module>
     <module>http-client</module>
       <module>webservice</module>
+      <module>jpa</module>
+      <module>reflect</module>
+      <module>netty</module>
+      <module>serve-loader</module>
   </modules>
 
   <name>allproject</name>

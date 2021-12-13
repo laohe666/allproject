@@ -7,25 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="netty" />
+        <module name="spring-aop" />
         <module name="mybatisx" />
         <module name="mongodb" />
+        <module name="serve-loader" />
         <module name="javafx" />
         <module name="webservice" />
-        <module name="sql" />
         <module name="jredis" />
+        <module name="service-loader" />
         <module name="http-client" />
         <module name="jedis-redis" />
         <module name="thread" />
-        <module name="service-loader" />
+        <module name="reflect" />
       </profile>
       <profile name="Annotation profile for allproject" enabled="true">
-        <sourceOutputDir name="../sql/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../sql/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../spring-aop/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-aop/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-aop" />
+        <module name="sql" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jpa" target="1.8" />
       <module name="service-loader" target="1.8" />
       <module name="swing" target="1.7" />
     </bytecodeTargetLevel>

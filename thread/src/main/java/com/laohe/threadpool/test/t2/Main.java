@@ -22,7 +22,7 @@ public class Main {
         list.add("2");
         for (String item : list) {
             if ("2".equals(item)) {
-                list.r
+
             }
         }
 
